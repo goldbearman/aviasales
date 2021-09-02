@@ -9,18 +9,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 const App = () => {
 
   return (
-    <div className="main-container">
+    <div className="air-container">
       <Header className="header"></Header>
-      <Container >
-
-        <Row >
+      <Container className="content">
+        <Row>
           <Col md={4}>
             <FilterList/>
           </Col>
           <Col md={8}>
             <MainContainer/>
           </Col>
-
         </Row>
       </Container>
     </div>

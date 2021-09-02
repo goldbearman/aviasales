@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src="../pictures/aviasales-logo.png" alt=""/>
+      <img src="../pictures/aviasales-logo.png" alt="logo-aviasales"/>
     </header>
   );
 }
