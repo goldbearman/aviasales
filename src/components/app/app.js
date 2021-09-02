@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 import "./app.css";
 
 const App = () => {
@@ -8,8 +7,6 @@ const App = () => {
   return (
     <section className="todoapp">
       <header className="header">
-        <AppHeader/>
-        <NewTaskForm onItemAdded={this.addItem}/>
       </header>
       <section className="main">
         <TaskList
@@ -26,5 +23,6 @@ const App = () => {
       </section>
     </section>
   );
-
 }
+
+export default App;
