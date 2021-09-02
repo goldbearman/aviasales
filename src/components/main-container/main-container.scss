@@ -9,6 +9,10 @@
 
 .btn {
   font-size: 12px;
+  padding: 15px;
+  background-color: white;
+  color: grey;
+  border-color: #DFE5EC;
 
   &:hover {
     border: 1px solid #2196F3;
@@ -17,23 +21,9 @@
   }
 }
 
-.btn-check:checked + .btn-outline-danger, .btn-check:active + .btn-outline-danger, .btn-outline-danger:active, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show {
+.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #2196F3;
-  border: #2196F3;
-  outline: none;
+  border-color: #2196F3;
 }
 
-.btn-check:checked + .btn-outline-success, .btn-check:active + .btn-outline-success, .btn-outline-success:active, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show {
-  color: #fff;
-  background-color: #2196F3;
-  border: #2196F3;
-  outline: none;
-}
-
-.btn-outline-danger {
-  color: #4A4A4A;
-  border-color: #DFE5EC;
-  padding: 15px;
-  background-color: white;
-}

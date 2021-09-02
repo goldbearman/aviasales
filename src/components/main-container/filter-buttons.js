@@ -13,13 +13,13 @@ function FilterButtons() {
 
   return (
     <>
-      <ButtonGroup>
+      <ButtonGroup className="mb-2">
         {radios.map((radio, idx) => (
           <ToggleButton
             key={idx}
             id={`radio-${idx}`}
             type="radio"
-            variant={idx % 2 ? 'outline-success' : 'outline-danger'}
+            variant="secondary"
             name="radio"
             value={radio.value}
             checked={radioValue === radio.value}
