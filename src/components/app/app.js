@@ -1,27 +1,29 @@
 import React, { Component } from "react";
 
-import "./app.css";
+import "./app.scss";
+import Header from "../header/header";
+import FilterList from "../filter-list/filter-list";
+import MainContainer from "../main-container/main-container";
+import { Container, Row, Col } from 'react-bootstrap';
 
 const App = () => {
 
   return (
-    <section className="todoapp">
-      <header className="header">
-      </header>
-      <section className="main">
-        <TaskList
-          todos={this.showItems(this.state.todoData)}
-          onDeleted={this.deleteItem}
-          onToggleDone={this.onToggleDone}
-        />
-        <Footer
-          toDo={toDo}
-          filterActiveFooter={this.filterActive}
-          filter={this.state.filter}
-          clearCompleted={this.clearCompleted}
-        />
-      </section>
-    </section>
+    <div className="main-container">
+      <Header className="header"></Header>
+      <Container >
+
+        <Row >
+          <Col md={4}>
+            <FilterList/>
+          </Col>
+          <Col md={8}>
+            <MainContainer/>
+          </Col>
+
+        </Row>
+      </Container>
+    </div>
   );
 }
 
