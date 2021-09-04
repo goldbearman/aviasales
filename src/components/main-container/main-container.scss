@@ -1,37 +1,53 @@
-.row{
-  --bs-gutter-x: 1.2rem;
-}
+.main-container {
+  margin-bottom: 50px;
 
-.btn-group {
-  width: 100%;
-  margin-bottom: 0 !important;
-}
-
-.btn {
-  font-family: 'OpenSans', sans-serif;
-  font-size: 12px;
-  padding: 15px;
-  background-color: white;
-  color: grey;
-  border-color: #DFE5EC;
-  outline: none;
-  border-radius: 0.4rem;
-
-
-  &:hover {
-    border: 1px solid #2196F3;
-    background-color: #ffffff;
-    color: #2196F3;
+  .row {
+    --bs-gutter-x: 1.2rem;
   }
-  &:active{
-    border: 1px solid #2196F3;
+
+  .btn-group {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .btn {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 12px;
+    padding: 15px;
+    background-color: white;
+    color: grey;
+    border-color: #DFE5EC;
     outline: none;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+
+
+    &:hover {
+      border: 1px solid #2196F3;
+      background-color: #ffffff;
+      color: #2196F3;
+    }
+
+    &:active {
+      border: 1px solid #2196F3;
+      outline: none;
+    }
+  }
+
+  .btn-five-tickets {
+    width: 100%;
+    background-color: #2196F3;
+    color: white;
+  }
+
+
+  .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #2196F3;
   }
 }
-
-.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #2196F3;
-  border-color: #2196F3;
-}
-

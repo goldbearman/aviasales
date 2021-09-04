@@ -4,7 +4,8 @@ import "./app.scss";
 import Header from "../header/header";
 import FilterList from "../filter-list/filter-list";
 import MainContainer from "../main-container/main-container";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
             <MainContainer/>
           </Col>
         </Row>
+        {/*<Button as="input" type="button" value="Input" />*/}
       </Container>
     </div>
   );
