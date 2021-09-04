@@ -1,19 +1,21 @@
 import React, { Component } from "react";
 
-import classes from "./main-container.scss";
 import FilterButtons from "./filter-buttons";
 import Flight from "../flight/flight";
 import FlightList from "../flight-list/flight-list";
 import { Button } from "react-bootstrap";
+import scss from "./main-container.module.scss";
 
 
 const MainContainer = () => {
 
+  console.log(scss);
+
   return (
-    <div className="main-container">
+    <div className={scss.mainContainer}>
       <FilterButtons/>
       <FlightList/>
-      <Button className="btn-five-tickets" variant="primary" size="lg">Показать еще 5 билетов!</Button>
+      <Button className={scss.btnFiveTickets} variant="primary" size="lg">Показать еще 5 билетов!</Button>
     </div>
   );
 };
