@@ -1,14 +1,21 @@
-.main-container {
+.container {
   margin-bottom: 50px;
 
   .row {
     --bs-gutter-x: 1.2rem;
   }
 
-  .btn-group {
+  .btnGroup {
     width: 100%;
     margin-bottom: 0 !important;
+
+    .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+      color: #fff;
+      background: #2b1664;
+      border-color: #1e265e;
+    }
   }
+
 
   .button {
     width: 100%;
@@ -25,29 +32,47 @@
     border-radius: 0.4rem;
     text-transform: uppercase;
 
-
     &:hover {
       border: 1px solid #2196F3;
       background-color: #ffffff;
       color: #2196F3;
     }
 
-    &:active {
+    &:checked {
       border: 1px solid #2196F3;
       outline: none;
+      background-color: #2196F3;
     }
   }
 
-  .btn-five-tickets {
+
+  .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #1579c3;
+    border-color: #51585e;
+  }
+
+  .btnBlueColor:checked {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #2196F3;
+  }
+
+  .btnFiveTickets {
     width: 100%;
     background-color: #2196F3;
     color: white;
   }
 
-
-  .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+  .btn-check:checked {
     color: #fff;
-    background-color: #2196F3;
-    border-color: #2196F3;
+    background-color: #1579c3;
+    border-color: #51585e;
   }
+}
+
+.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #1f2364;
+  border-color: #1e265e;
 }

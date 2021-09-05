@@ -6,9 +6,7 @@ import FilterList from "../filter-list/filter-list";
 import MainContainer from "../main-container/main-container";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-
 const App = () => {
-
   return (
     <div className="air-container">
       <Header className="header"></Header>
@@ -25,6 +23,6 @@ const App = () => {
       </Container>
     </div>
   );
-}
+};
 
 export default App;
